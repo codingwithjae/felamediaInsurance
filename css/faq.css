@@ -1,0 +1,32 @@
+
+span {
+    color: var(--color-text-primary);
+    font-size: var(--font-mobile-size-lg);
+
+}
+
+h1 {
+    font-size: var();
+    color: var(--color-primary);
+}
+
+h2 {
+    text-align: center;
+    color: var(--color-primary);
+}
+
+#principal {
+  margin-top: 200px;
+  margin-bottom: 20px;
+  font-size: var(--font-mobile-size-lg);
+}
+
+.my-2 {
+    color: var(--color-text-primary);
+}
+
+.px-3 {
+    color: var(--color-text-primary);
+}
+
+
