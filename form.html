@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felamedia Seguros</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Signika:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="header-logo_image" src="img/logo-with-text copy.png" alt="Logo de Felamedia Seguros" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <button id="contact-me-button" class="header__cta-button">
+        <a href="form.html">Quiero protegerme</a>
+      </button>
+    </header>
+
+    <main>
+      <section>
+        <article>
+          <h2>Escríbenos un mail y te contactaremos</h2>
+        </article>
+        <form
+          class="contact-form"
+          action="form action="https://formsubmit.co/johandercampos@outlook.com" method="POST" 
+          method="POST"
+        >
+          <div class="input-container">
+            <input
+              id="fullname"
+              name="Nombre y Apellido"
+              type="text"
+              required
+              placeholder="Nombre y Apellido"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Correo electrónico"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              id="city"
+              name="city"
+              type="text"
+              placeholder="Ciudad dónde vives"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              id="whatsapp"
+              name="whatsapp"
+              type="text"
+              placeholder="WhatsApp"
+            />
+          </div>
+          <div class="message-container">
+            <textarea
+              id="message"
+              name="message"
+              type="text"
+              placeholder="Mensaje"
+              maxlength="500"
+            ></textarea>
+          </div>
+          <button id="send-button" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+
+    <main class="main">
+      <section id="hero-section" class="hero">
+        <div class="hero__image-content">
+          <img src="img/shape.png" alt="Imagen de forma" class="shape__image" />
+          <img
+            src="img/hero-people-in-couch.png"
+            alt="Personas en un sofá"
+            class="hero__image"
+          />
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Protege tu tranquilidad y futuro financiero, hoy.
+          </h1>
+          <p id="hero__description" class="hero__description">
+            Evita que un evento inesperado atente contra tu estabilidad
+            financiera y la de tu familia.
+          </p>
+        </div>
+      </section>
+
+      <section id="logo-section" class="logo">
+        <div class="logo-section-content">
+          <p class="logo__copy">Elige</p>
+          <img
+            src="img/logo-with-text copy.png"
+            alt="Logo con texto"
+            class="logo__with-text"
+          />
+          <p id="logo-slogan__copy" class="logo-slogan__copy">
+            Asegura tu presente y futuro. Te asesoramos en seguros de:
+          </p>
+        </div>
+      </section>
+
+      <section id="services-section" class="services">
+        <div class="services-list-content">
+          <img
+            class="services_image"
+            src="img/service-list.png"
+            alt="Lista de servicios"
+          />
+        </div>
+
+        <div class="services__cta-container">
+          <button
+            id="contact-me-button"
+            href="#contact-section"
+            class="services__cta cta-button"
+          >
+            Quiero Protegerme
+          </button>
+        </div>
+      </section>
+
+      <section id="advisors-section" class="advisors">
+        <div class="advisors__content">
+          <h2 class="advisors__title">Tus Asesores de Protección</h2>
+          <p class="advisors__description">
+            Nada como vivir seguro de que nuestras finanzas y familia contarán
+            con paz y tranquilidad aún en momentos indeseados.
+          </p>
+          <p class="advisors__description">
+            Somos una agencia de seguros independiente que cuenta con un equipo
+            profesional con más de una década de trayectoria protegiendo las
+            finanzas de las familias latinas.
+          </p>
+          <p class="advisors__description">
+            Estamos aquí para entender tus necesidades actuales y objetivos
+            futuros, buscando brindarte la protección requerida a tu medida.
+          </p>
+        </div>
+
+        <div class="advisors__image-content">
+          <img
+            src="img/shape-squares-images.png"
+            alt="Imagen de forma"
+            class="advisors__hero-image"
+          />
+        </div>
+      </section>
+
+      <section id="understanding-section" class="understanding">
+        <img
+          src="img/background-with-shape.png"
+          alt="Imagen de forma con color de fondo"
+          class="understanding__background"
+        />
+        <div class="understanding__content">
+          <h2 class="understanding__title">
+            Te entendemos y simplificamos el proceso
+          </h2>
+          <p id="understanding__description">
+            Ante la marcada necesidad de contar con pólizas de seguro, sabemos
+            que resulta abrumador explorar y entender tantas opciones.
+          </p>
+          <p id="understanding__description">
+            Queremos conocer tus necesidades y ubicar la mejor protección
+            posible para ti y tu familia.
+          </p>
+        </div>
+
+        <div class="understanding__cta-container">
+          <button
+            id="contact-me-button"
+            href="#contact-section"
+            class="understanding__cta cta-button"
+          >
+            Quiero Protegerme
+          </button>
+        </div>
+      </section>
+
+      <section id="protection-section" class="protection">
+        <div class="protection__content">
+          <p class="protection__circle-description">
+            En la economía de hoy, la atención médica tiene un alto costo y
+            puede desequilibrar las finanzas del hogar.
+          </p>
+          <p class="protection__circle-description">
+            Ni hablar de la potencial pérdida temporal de ingreso en caso de
+            discapacidad, o peor aún, la pérdida absoluta de una fuente de
+            ingreso del hogar en caso de fallecimiento.
+          </p>
+          <p class="protection__circle-description">
+            Por ello, queremos ensamblar contigo tu Círculo de Protección
+            Personal™:
+          </p>
+        </div>
+      </section>
+
+      <section id="circle-section" class="circle">
+        <div class="circle__content-images">
+          <img
+            src="img/graphic-with-logo.png"
+            alt="Foto de padre y hija"
+            class="circle__protection-graphic"
+          />
+          <img
+            src="img/shape-persons.png"
+            alt="Gráfico de círculo de protección"
+            class="circle__hero-image"
+          />
+        </div>
+      </section>
+
+      <section id="insurance-types-section" class="insurance">
+        <div class="insurance-type">
+          <div class="insurance-type__content">
+            <div class="insurance-type__icon">
+              <img
+                src="img/graphic-icon.png"
+                alt="Icono de seguro de salud"
+                class="insurance-type__image"
+              />
+            </div>
+            <h3 class="insurance-type__title">Seguro de Salud</h3>
+          </div>
+      
+          <div class="insurance-type__description">
+            <p>
+              Ideal para apoyarte a cubrir los gastos en consultas médicas,
+              hospitalizaciones, medicamentos y tratamientos especializados,
+              protegiendo así la estabilidad de tu presupuesto del hogar.
+            </p>
+          </div>
+        </div>
+      
+        <div class="insurance-type">
+          <div class="insurance-type__content">
+            <div class="insurance-type__icon">
+              <img
+                src="img/bandaid-icon.png"
+                alt="Icono de seguro complementario"
+                class="insurance-type__image"
+              />
+            </div>
+            <h3 class="insurance-type__title">Seguro Complementario</h3>
+          </div>
+      
+          <div class="insurance-type__description">
+            <p>
+              Una opción adicional para ampliar la cobertura de tu seguro de
+              salud base, asumiendo costos como copagos, deducibles o servicios
+              no cubiertos y reduciendo el impacto en tu bolsillo.
+            </p>
+          </div>
+        </div>
+      
+        <div class="insurance-type">
+          <div class="insurance-type__content">
+            <div class="insurance-type__icon">
+              <img
+                src="img/graphic-icon.png"
+                alt="Icono de seguro de vida"
+                class="insurance-type__image"
+              />
+            </div>
+            <h3 class="insurance-type__title">Seguro de Vida</h3>
+          </div>
+      
+          <div class="insurance-type__description">
+            <p>
+              Proporciona apoyo financiero a tus seres queridos en caso de
+              fallecimiento, garantizando su bienestar económico y cubriendo
+              gastos como funerales, deudas o sustento económico.
+            </p>
+          </div>
+        </div>
+      
+        <div class="insurance-type">
+          <div class="insurance-type__content">
+            <div class="insurance-type__icon">
+              <img
+                src="img/heart-icon.png"
+                alt="Icono de seguro de discapacidad"
+                class="insurance-type__image"
+              />
+            </div>
+            <h3 class="insurance-type__title">Seguro de Discapacidad</h3>
+          </div>
+      
+          <div class="insurance-type__description">
+            <p>
+              Esta póliza te protege durante un período de incapacidad que no te
+              permita trabajar, garantizando la estabilidad de tu ingreso y el
+              sustento temporal o permanente de tu familia.
+            </p>
+          </div>
+        </div>
+      
+        <button
+          id="contact-me-button"
+          href="#contact-section"
+          class="insurance__cta cta-button"
+        >
+          Quiero Protegerme
+        </button>
+      
+        <div  class="company-info">
+          <p id="insurance-company_info"">Compañía de seguros</p>
+        </div>
+      </section>
+
+      <section id="clients_info" class="clients">
+        <div class="clients-logos_container">
+          <img
+            src="img/clients_logos.png"
+            alt="Icono de seguro de discapacidad"
+            class="clients_logos"
+          />
+        </div>
+      </section>
+      
+    </main>

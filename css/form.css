@@ -1,0 +1,39 @@
+section {
+  position: relative;
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+}
+
+.input-container,
+textarea,
+#send-button {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
+}
+
+#send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}

@@ -1,0 +1,1270 @@
+:root {
+  /* Mobile Font Sizes */
+  --font-mobile-size-xs: 0.625rem; /* 10px */
+  --font-mobile-size-sm: 0.75rem; /* 12px */
+  --font-mobile-size-md: 0.875rem; /* 14px */
+  --font-mobile-size-lg: 1.5625rem; /* 25px */
+  --font-mobile-size-xl: 3.75rem; /* 60px */
+
+  /* Tablet Font Sizes */
+  --font-tablet-size-sm: 0.9375rem; /* 15px */
+  --font-tablet-size-md: 2.1875rem; /* 35px */
+  --font-tablet-size-lg: 2.5rem; /* 40px */
+  --font-tablet-size-xl: 3.75rem; /* 60px */
+
+  /* 1024px and 1280px Resolutions Font Sizes */
+  --font-desktop-size-xs: 1.125rem; /* 18px */
+  --font-desktop-size-sm: 1.5rem; /* 24px */
+  --font-desktop-size-md: 1.9125rem; /* 30.6px */
+  --font-desktop-size-lg: 2.86625rem; /* 45.86px */
+  --font-desktop-size-xl: 5.0625rem; /* 81px */
+
+  /* FHD, QHD and 4K ResolutionS Desktop Font Sizes */
+
+  --font-desktop-hd-size-xs: 1.475rem; /* 23.6px */
+  --font-desktop-hd-size-sm: 1.75rem; /* 28px */
+  --font-desktop-hd-size-md: 2.23875rem; /* 35.81px */
+  --font-desktop-hd-size-lg: 2.625rem; /* 42px */
+  --font-desktop-hd-size-xl: 4.625rem; /* 74px */
+  --font-desktop-hd-size-xxl: 5.6875rem; /* 91px */
+
+  /* Colors */
+  --color-primary: #1f3c88; /* Primary Color for buttons */
+  --color-primary-hover: #0053a0; /* Primary Color in hover state */
+
+  --background-gradient: rgb(96, 55, 222); /* Gradient background colors */
+  --background-gradient-linear: linear-gradient(
+    /* Gradient background colors */ 90deg,
+    rgba(96, 55, 222, 1) 0%,
+    rgba(60, 42, 187, 1) 100%
+  );
+
+  --color-bg-primary: #ffff; /* Primary Background Color */
+  --color-bg-secondary: #58a0eb; /* Secondary Background Color */
+
+  --color-text-primary: #868686; /* Primary Text Color */
+  --color-text-secondary: #ffff; /* Secondary Text Color */
+  --color-text-tertiary: #ffff; /* Tertiary Text Color */
+}
+
+/* General porpose styles start */
+
+* {
+  margin: 0px;
+}
+
+nav {
+  width: 130px;
+  position: relative;
+  left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-tertiary);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Signika", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  /* Styles for all paragraphs */
+  font-family: "Red Hat Display", sans-serif;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  text-align: left;
+}
+
+#contact-me-button {
+  /* Styles for main content buttons */
+  border-radius: 100px;
+  width: 270px;
+  height: 40px;
+  background: none;
+  border: none;
+  font-weight: 400;
+  font-family: "Signika", sans-serif;
+  padding: 0;
+  color: var(--color-text-secondary);
+  background: var(--background-gradient);
+  background: var(--background-gradient-linear);
+  cursor: pointer;
+  outline: inherit;
+}
+
+#contact-me-button:hover {
+  background: var(--color-primary-hover);
+  color: var(--nuevo-color-de-texto);
+}
+
+/* General porpose styles ends */
+
+header {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-mobile-size-sm);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bg-primary);
+  font-family: "Signika", sans-serif;
+  position: fixed;
+  z-index: 999;
+}
+
+.header__menu_link:hover {
+  color: var(--color-text-primary);
+
+}
+
+.header-logo_image {
+  width: 150px;
+  height: 150px;
+}
+
+.header__cta-button {
+  font-size: var(--font-mobile-size-sm);
+  position: relative;
+  right: 5px;
+}
+
+.hero {
+  position: relative;
+  height: 450px;
+  text-align: left;
+}
+
+.hero__content {
+  position: relative;
+  top: 40px;
+}
+
+.hero__title {
+  margin-left: 8px;
+  position: relative;
+  top: 80px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-mobile-size-lg);
+  z-index: 2;
+  width: 260px;
+}
+
+#hero__description {
+  margin-left: 8px;
+  position: relative;
+  top: 90px;
+  color: var(--color-text-secondary);
+  z-index: 2;
+  width: 290px;
+  font-size: var(--font-mobile-size-sm);
+}
+
+.hero__image-content {
+  position: absolute;
+  top: 0;
+  left: 0vw;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.shape__image {
+  position: relative;
+  width: 100%;
+  top: -20px;
+  height: 100%;
+  right: 10vw;
+}
+
+.hero__image {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.logo {
+  margin-top: 0px;
+  width: auto;
+  height: 100px;
+}
+
+.logo-section-content {
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__copy {
+  font-size: var(--font-mobile-size-md);
+  margin-bottom: -100px;
+}
+
+.logo__with-text {
+  width: 70%;
+}
+
+#logo-slogan__copy {
+  position: relative;
+  top: -90px;
+  font-size: var(--font-mobile-size-sm);
+  color: var(--color-primary);
+}
+
+.services {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.services-list-content {
+  margin-right: 20px;
+}
+
+.services_image {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.services__cta-container {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.services__cta {
+  position: relative;
+  top: 10px;
+}
+
+.advisors {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.advisors__content {
+  display: grid;
+  flex-direction: auto auto;
+}
+
+.advisors__title {
+  margin-bottom: 1px;
+  width: 245px;
+  color: var(--color-primary);
+}
+
+.advisors__description {
+  width: 227px;
+  margin-top: 20px;
+}
+
+.advisors__image-content {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  top: -320px;
+}
+
+.advisors__hero-image {
+  position: relative;
+  width: 100%;
+  left: 46vw;
+}
+
+.understanding {
+  position: relative;
+  top: -280px;
+  color: var(--color-text-secondary);
+  height: 280px;
+}
+
+.understanding__background {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.understanding__section {
+  text-align: center;
+}
+
+.understanding__title {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: var(--font-mobile-size-lg);
+}
+
+.understanding__content {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-mobile-size-md);
+}
+
+#understanding__description {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--color-text-secondary);
+}
+
+.understanding__cta-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.protection {
+  position: relative;
+  top: -260px;
+  display: flex;
+  justify-content: left;
+}
+
+.protection__content {
+  width: 300px;
+}
+
+.protection__circle-description {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.circle {
+  position: relative;
+  height: 450px;
+  top: -230px;
+  text-align: left;
+}
+
+.circle__content-images {
+  position: absolute;
+  left: 0vw;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.circle__hero-image {
+  position: absolute;
+  right: 34vw;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.circle__protection-graphic {
+  position: relative;
+  width: 100%;
+  top: 10px;
+  height: 100%;
+  width: 100%;
+  left: 50px;
+  scale: 0.8;
+}
+
+.insurance {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -250px;
+}
+
+.insurance-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.insurance-type__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.insurance-type__icon {
+  margin-right: 10px;
+}
+
+.insurance-type__image {
+  width: 50px;
+  height: 50px;
+}
+
+.insurance-type__title {
+  font-size: var(--font-mobile-size-lg);
+  margin: 0;
+}
+
+.insurance-type__description {
+  font-size: 1rem;
+  margin-left: 20px;
+  width: 340px;
+  font-size: var(--font-size-sm);
+}
+
+#insurance-company_info {
+  color: var(--color-primary);
+  margin-top: 20px;
+}
+
+.clients {
+  width: 100vw;
+  position: relative;
+  top: -200px;
+}
+
+.clients-logos_container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.clients_logos {
+  width: 80%;
+  height: 80%;
+}
+
+@media (min-width: 768px) {
+  nav {
+    width: 130px;
+    font-size: var(--font-tablet-size-sm);
+    position: relative;
+    left: 160px;
+  }
+
+  .header__cta-button {
+    font-size: var(--font-mobile-size-sm);
+    right: 15px;
+  }
+
+  .hero {
+    height: 0;
+    top: -70px;
+  }
+
+  .hero__content {
+    top: 120px;
+  }
+
+  .hero__title {
+    margin-left: 20px;
+    top: 80px;
+    font-size: var(--font-tablet-size-xl);
+    z-index: 2;
+    width: 550px;
+  }
+
+  #hero__description {
+    margin-left: 20px;
+    top: 105px;
+    width: 510px;
+    font-size: var(--font-mobile-size-lg);
+  }
+
+  .shape__image {
+    top: -20px;
+    right: 10vw;
+  }
+
+  .hero__image {
+    top: 215px;
+    left: 120px;
+  }
+
+  .logo {
+    position: relative;
+    top: 780px;
+  }
+
+  .logo__copy {
+    font-size: var(--font-mobile-size-sm);
+    margin-bottom: -150px;
+  }
+
+  .logo__with-text {
+    width: 50%;
+  }
+
+  #logo-slogan__copy {
+    top: -120px;
+    font-size: var(--font-desktop-size-sm);
+  }
+
+  .services {
+    top: 790px;
+  }
+
+  .services-list-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services_image {
+    width: 70%;
+    height: 70%;
+  }
+
+  .advisors {
+    position: relative;
+    top: 790px;
+    margin-left: 70px;
+  }
+
+  .advisors__title {
+    width: 345px;
+    font-size: var(--font-tablet-size-lg);
+  }
+
+  .advisors__description {
+    width: 387px;
+    font-size: var(--font-tablet-size-sm);
+  }
+
+  .advisors__image-content {
+    top: -480px;
+  }
+
+  .advisors__hero-image {
+    width: 100%;
+    left: 36vw;
+  }
+
+  .understanding {
+    top: 240px;
+    width: 430px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .understanding__title {
+    font-size: var(--font-tablet-size-md);
+    margin-top: 10px;
+    width: 400px;
+  }
+
+  #understanding__description {
+    font-size: var(--font-tablet-size-sm);
+    margin-left: auto;
+    margin-right: auto;
+    width: 390px;
+    margin-top: 30px;
+  }
+
+  .protection {
+    top: 300px;
+  }
+
+  .protection__content {
+    width: 440px;
+  }
+
+  .protection__circle-description {
+    margin-top: 12px;
+    margin-left: 70px;
+    font-size: var(--font-tablet-size-sm);
+  }
+
+  .circle {
+    top: 280px;
+  }
+
+  .circle__protection-graphic {
+    height: 90%;
+    width: 90%;
+    left: 140px;
+  }
+
+  .insurance {
+    top: 510px;
+  }
+
+  .clients {
+    top: 600px;
+  }
+
+  .clients_logos {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    width: 130px;
+    font-size: var(--font-desktop-size-sm);
+    position: relative;
+    left: 160px;
+  }
+
+  .header__cta-button {
+    font-size: var(--font-desktop-size-sm);
+    right: 25px;
+  }
+
+  .header-logo_image {
+    width: 200px;
+    height: 200px;
+  }
+
+  #contact-me-button {
+    width: 440px;
+    height: 70px;
+  }
+
+  .hero {
+    top: -140px;
+  }
+
+  .hero__content {
+    top: 180px;
+  }
+
+  .hero__title {
+    margin-left: 10px;
+    font-size: var(--font-desktop-size-xl);
+    width: 820px;
+  }
+
+  #hero__description {
+    margin-left: 10px;
+    width: 640px;
+    font-size: var(--font-desktop-size-md);
+  }
+
+  .hero__image {
+    top: 275px;
+    left: 120px;
+  }
+
+  .logo {
+    position: relative;
+    top: 950px;
+  }
+
+  .logo-section-content {
+    width: auto;
+  }
+
+  .logo__copy {
+    font-size: var(--font-desktop-size-md);
+    position: relative;
+    top: 30px;
+  }
+
+  .logo__with-text {
+    width: 50%;
+  }
+
+  #logo-slogan__copy {
+    top: -150px;
+    font-size: var(--font-desktop-size-sm);
+  }
+
+  .services {
+    top: 1150px;
+  }
+
+  .services__cta {
+    font-size: var(--font-desktop-size-sm);
+  }
+
+  .advisors {
+    position: relative;
+    top: 1290px;
+    margin-left: 70px;
+  }
+
+  .advisors__title {
+    width: 495px;
+    margin-bottom: 20px;
+    font-size: var(--font-desktop-size-xl);
+  }
+
+  .advisors__description {
+    width: 707px;
+    font-size: var(--font-desktop-size-sm);
+  }
+
+  .advisors__image-content {
+    top: -750px;
+  }
+
+  .advisors__hero-image {
+    left: 46vw;
+  }
+
+  .understanding {
+    top: 640px;
+    width: 830px;
+    height: 570px;
+  }
+
+  .understanding__title {
+    font-size: var(--font-desktop-size-lg);
+    margin-top: 60px;
+    width: 600px;
+  }
+
+  #understanding__description {
+    font-size: var(--font-desktop-size-sm);
+    width: 750px;
+  }
+  .understanding__cta {
+    font-size: var(--font-desktop-size-sm);
+    margin-top: 20px;
+  }
+
+  .protection {
+    top: 740px;
+  }
+
+  .protection__content {
+    width: 770px;
+  }
+
+  .protection__circle-description {
+    margin-top: 42px;
+    font-size: var(--font-desktop-size-sm);
+  }
+
+  .circle {
+    top: 710px;
+    right: 130px;
+    scale: 0.8;
+  }
+
+  .insurance {
+    top: 1210px;
+    font-size: var(--font-desktop-size-sm);
+  }
+
+  .insurance-type__title {
+    font-size: var(--font-size-lg);
+  }
+
+  .insurance-type__description {
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 780px;
+    font-size: var(--font-desktop-sm);
+  }
+
+  .insurance__cta {
+    font-size: var(--font-desktop-size-sm);
+  }
+
+  #insurance-company_info {
+    color: var(--color-primary);
+    margin-top: 50px;
+  }
+
+  .clients-logos_container {
+    width: auto;
+  }
+
+  .clients {
+    top: 1300px;
+    width: auto;
+  }
+
+  .clients_logos {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  nav {
+    left: 250px;
+  }
+
+  .header__cta-button {
+    right: 35px;
+  }
+
+  .hero {
+    top: -170px;
+  }
+
+  .hero__content {
+    top: 260px;
+  }
+
+  .hero__title {
+    margin-left: 30px;
+    font-size: var(--font-desktop-size-xl);
+    width: 820px;
+    font-weight: 400;
+  }
+
+  #hero__description {
+    margin-left: 30px;
+    width: 640px;
+    font-size: var(--font-desktop-size-md);
+  }
+
+  .shape__image {
+    position: relative;
+    width: 85%;
+    height: 85%;
+    right: 80px;
+  }
+
+  .hero__image {
+    top: 235px;
+    width: 85%;
+    height: 95%;
+    left: 340px;
+  }
+
+  .logo {
+    top: 750px;
+  }
+
+  .logo__copy {
+    top: 80px;
+  }
+
+  #logo-slogan__copy {
+    font-size: var(--font-desktop-size-xs);
+    top: -200px;
+  }
+
+  .services {
+    top: 910px;
+  }
+
+  .services_image {
+    width: 65%;
+    height: 65%;
+  }
+
+  .advisors {
+    position: relative;
+    top: 940px;
+  }
+
+  .understanding {
+    top: 100px;
+  }
+
+  .understanding__title {
+    font-size: var(--font-desktop-size-lg);
+    width: 500px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+  }
+
+  #understanding__description {
+    position: relative;
+    width: 740px;
+    top: 60px;
+  }
+
+  .understanding__cta {
+    position: relative;
+    top: 80px;
+  }
+
+  .protection {
+    top: 200px;
+  }
+
+  .circle {
+    top: 200px;
+  }
+
+  .insurance {
+    top: 700px;
+  }
+
+  .clients {
+    top: 800px;
+  }
+
+  .clients_logos {
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 1920px) {
+  header {
+    height: 160px;
+  }
+
+  nav {
+    left: 400px;
+  }
+
+  .header__cta-button {
+    font-size: var(--font-desktop-size-md);
+    right: 25px;
+    width: 420px;
+  }
+
+  .header-logo_image {
+    width: 350px;
+    height: 350px;
+  }
+
+  #contact-me-button {
+    width: 620px;
+    height: 90px;
+  }
+
+  .hero {
+    top: -370px;
+  }
+
+  .hero__content {
+    top: 570px;
+  }
+
+  .hero__title {
+    margin-left: 160px;
+    font-size: var(--font-desktop-hd-size-xxl);
+    width: 920px;
+  }
+
+  #hero__description {
+    margin-top: 20px;
+    margin-left: 160px;
+    width: 720px;
+    font-size: var(--font-desktop-hd-size-md);
+  }
+
+  .shape__image {
+    width: 85%;
+    height: 85%;
+    right: 330px;
+  }
+
+  .hero__image {
+    top: 335px;
+    width: 85%;
+    height: 95%;
+    left: 480px;
+  }
+
+  .logo {
+    top: 1200px;
+  }
+
+  .logo__copy {
+    font-size: var(--font-desktop-hd-size-lg);
+    margin-bottom: -300px;
+  }
+
+  #logo-slogan__copy {
+    font-size: var(--font-desktop-hd-size-xs);
+    top: -320px;
+  }
+
+  .services {
+    top: 1500px;
+  }
+
+  .services_image {
+    width: 45%;
+    height: 45%;
+  }
+
+  .services__cta {
+    font-size: var(--font-desktop-hd-size-md);
+  }
+
+  .advisors {
+    top: 1550px;
+  }
+
+  .advisors__content {
+    position: relative;
+    top: 200px;
+  }
+
+  .advisors__title {
+    font-size: var(--font-desktop-hd-size-xxl);
+    width: 600px;
+    margin-left: 160px;
+  }
+  .advisors__description {
+    font-size: var(--font-desktop-hd-size-sm);
+    margin-left: 160px;
+  }
+
+  .advisors__hero-image {
+    top: -190px;
+    right: 240px;
+  }
+
+  .understanding {
+    top: -20px;
+    height: 650px;
+  }
+  .understanding__title {
+    font-size: var(--font-desktop-hd-size-xl);
+    width: 790px;
+  }
+
+  #understanding__description {
+    width: 750px;
+  }
+
+  .understanding__cta {
+    font-size: var(--font-desktop-hd-size-md);
+  }
+
+  .protection {
+    top: 50px;
+    margin-left: 220px;
+  }
+
+  .protection__circle-description {
+    font-size: var(--font-desktop-hd-size-sm);
+  }
+
+  .circle {
+    top: -200px;
+    right: 220px;
+  }
+
+  .circle__protection-graphic {
+    left: 420px;
+  }
+
+  .insurance {
+    top: 560px;
+  }
+
+  .insurance-type__title {
+    font-size: var(--font-desktop-hd-size-lg);
+  }
+
+  .insurance-type__description {
+    font-size: var(--font-desktop-hd-size-sm);
+  }
+
+  .insurance__cta {
+    font-size: var(--font-desktop-hd-size-md);
+  }
+
+  .company-info {
+    font-size: var(--font-desktop-hd-size-xs);
+  }
+
+  .clients {
+    top: 650px;
+  }
+
+  .clients_logos {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 2560px) {
+  nav {
+    left: 700px;
+  }
+
+  .hero {
+    top: -490px;
+  }
+
+  .hero__content {
+    top: 790px;
+  }
+
+  .shape__image {
+    right: 530px;
+  }
+
+  .hero__image {
+    left: 550px;
+  }
+
+  .logo {
+    top: 1640px;
+  }
+
+  .logo__copy {
+    margin-bottom: -450px;
+  }
+
+  #logo-slogan__copy {
+    top: -420px;
+  }
+
+  .services {
+    top: 2100px;
+  }
+
+  .advisors {
+    top: 1950px;
+  }
+
+  .advisors__title {
+    position: relative;
+    top: 150px;
+  }
+
+  .advisors__description {
+    position: relative;
+    top: 150px;
+  }
+  .advisors__hero-image {
+    top: -50px;
+    left: 1000px;
+  }
+
+  .circle {
+    top: -200px;
+    right: 290px;
+  }
+
+  .circle__protection-graphic {
+    left: 820px;
+  }
+
+  .insurance {
+    top: 960px;
+  }
+
+  .clients {
+    top: 1050px;
+  }
+}
+
+@media (min-width: 3840px) {
+  nav {
+    left: 1300px;
+  }
+
+  .hero {
+    top: -620px;
+  }
+
+  .hero__content {
+    top: 1300px;
+  }
+
+  .hero__title {
+    left: 150px;
+  }
+
+  .hero__description {
+    left: 150px;
+  }
+
+  .shape__image {
+    right: 900px;
+  }
+
+  .hero__image {
+    left: 710px;
+  }
+
+  .logo {
+    top: 2100px;
+  }
+
+  .logo__copy {
+    margin-bottom: -610px;
+  }
+
+  #logo-slogan__copy {
+    top: -700px;
+  }
+
+  .services {
+    top: 2700px;
+  }
+
+  .advisors {
+    top: 2450px;
+  }
+
+  .advisors__title {
+    position: relative;
+    top: 550px;
+    margin-left: 600px;
+  }
+
+  .advisors__description {
+    position: relative;
+    top: 550px;
+    margin-left: 600px;
+  }
+  .advisors__hero-image {
+    top: -50px;
+    left: 1700px;
+  }
+
+  .protection {
+    top: 400px;
+    margin-left: 600px;
+  }
+
+  .circle {
+    top: 50px;
+    right: 390px;
+  }
+
+  .insurance {
+    top: 2160px;
+  }
+
+  .clients {
+    top: 2350px;
+  }
+}
