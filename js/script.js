@@ -1,35 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get the form and relevant fields
-  let form = document.querySelector(".contact-form");
-  let emailField = form.querySelector("#email");
-  let errorMessage = emailField.nextElementSibling;
-  let errorIcon = emailField.nextElementSibling.nextElementSibling;
+  const form = document.querySelector(".contact-form");
+  const emailField = form.querySelector("#email");
+  const errorMessage = form.querySelector(".error-message");
 
-  // Email validation function
+  // Function to validate the email
   function validateEmail() {
-    let email = emailField.value.trim();
-    let pattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zAZ0-9-.]+$/;
+    const email = emailField.value.trim();
+    const pattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
     if (pattern.test(email)) {
-      errorMessage.textContent = "";
-      emailField.classList.remove("error");
-      errorIcon.style.display = "none";
+      // Valid email, clear error message and return true
+      errorMessage.textContent = ""; // Clear the message on the page
       return true;
     } else {
-      errorMessage.textContent = "Formato de correo no válido";
-      errorMessage.style.color = "#FF6F5B";
+      // Invalid email, display an error message in the <span> element
+      errorMessage.textContent = "Please enter a valid email";
       emailField.classList.add("error");
+
       return false;
     }
   }
 
-  // Form submit event
+  // Form submission event
   form.addEventListener("submit", function (event) {
     if (!validateEmail()) {
       // If the email is not valid, prevent form submission
       event.preventDefault();
     } else {
-      // Email is valid, redirect to thank you page
+      // Valid email, redirect to the thank you page
       redirectToThankYou();
     }
   });
@@ -39,9 +38,3 @@ document.addEventListener("DOMContentLoaded", function () {
     validateEmail();
   });
 });
-
-
-
-
-
-
