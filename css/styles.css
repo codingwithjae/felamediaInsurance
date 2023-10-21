@@ -41,6 +41,7 @@
 
   --color-bg-primary: #ffff; /* Primary Background Color */
   --color-bg-secondary: #58a0eb; /* Secondary Background Color */
+  --color-bg-tertiary: #f0f0f0; /* tertiary Background Color */
 
   --color-text-primary: #868686; /* Primary Text Color */
   --color-text-secondary: #ffff; /* Secondary Text Color */
@@ -56,7 +57,7 @@
 nav {
   width: 130px;
   position: relative;
-  left: 30px;
+  left: 10px;
 }
 
 a {
@@ -73,6 +74,10 @@ ul {
 ul li a {
   text-decoration: none;
   color: #333;
+}
+
+li {
+  margin-left: 15px;
 }
 
 footer {
@@ -97,7 +102,7 @@ p {
 #contact-me-button {
   /* Styles for main content buttons */
   border-radius: 100px;
-  width: 270px;
+  width: 220px;
   height: 40px;
   background: none;
   border: none;
@@ -139,12 +144,12 @@ header {
 }
 
 .header-logo_image {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
 }
 
 .header__cta-button {
-  font-size: var(--font-mobile-size-sm);
+  font-size: var(--font-mobile-size-xs);
   position: relative;
   right: 5px;
 }

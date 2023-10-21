@@ -18,7 +18,11 @@
   <body>
     <header class="header">
       <a href="index.html">
-        <img class="header-logo_image" src="img/logo-with-text copy.png" alt="Logo de Felamedia Seguros" />
+        <img
+          class="header-logo_image"
+          src="img/logo-with-text copy.png"
+          alt="Logo de Felamedia Seguros"
+        />
       </a>
       <nav>
         <ul class="menu">
@@ -31,15 +35,38 @@
     </header>
 
     <main>
-      <section>
+
+      <section id="hero-section" class="hero">
+        <div class="hero__form-content">
+          <h1 class="hero__form-title">
+            Trabajemos
+            juntos por tu
+            tranquilidad
+              financiera
+          </h1>
+          <p id="hero__form-description" class="hero__form-description">
+            Queremos conocer tus necesidades y ubicar la mejor protección posible para ti y tu familia.
+
+          </p>
+        </div>
+          <img
+            class="hero__form-image"
+            src="img/form-hero.png"
+            alt="Imagen de mujer"
+          />
+        </section>
+
+
+      <section class="contact__form-container">
         <article>
           <h2>Escríbenos un mail y te contactaremos</h2>
         </article>
         <form
           class="contact-form"
-          action="form action="https://formsubmit.co/johandercampos@outlook.com" method="POST" 
+          action="https://formsubmit.co/361455abeb403b8f9404c4869d164ea7"
           method="POST"
         >
+        <input type="hidden" name="_next" value="https://mariejoemj.my.canva.site/agradecimiento">
           <div class="input-container">
             <input
               id="fullname"
@@ -56,6 +83,8 @@
               type="text"
               placeholder="Correo electrónico"
             />
+            <input type="hidden" name="_autoresponse" value="Gracias por escribirnos. Nos pondremos en contactos contigo en la brevedad. ">
+            <span class="error-message"></span>
           </div>
           <div class="input-container">
             <input
@@ -82,7 +111,9 @@
               maxlength="500"
             ></textarea>
           </div>
-          <button id="send-button" type="submit">Enviar</button>
+          <button id="send-button" type="submit"">
+            Enviar
+          </button>
         </form>
       </section>
     </main>
