@@ -31,7 +31,7 @@ To create multiple pages, I divided the content from the original PSD into secti
 
 ### The Use of CSS Styles
 
-In this project, there are three style sheets. One is the main style sheet, which contains the majority of the page's styles, especially for the main landing page. The other style sheets are for the FAQ page and the form, respectively. Each page has its own HTML, and the CSS was created following the BEM methodology for better readability and maintenance.
+In this project, there are three style sheets. One is the main style sheet, which contains the majority of the page's styles, especially for the main landing page. The other style sheets are for the FAQ page and the form, respectively. Each page has its own semantic HTML, and the CSS was created following the BEM methodology for better readability and maintenance.
 
 ### The Use of JavaScript
 
