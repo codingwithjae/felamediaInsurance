@@ -1,40 +1,41 @@
+/* Email validation styles */
 .error-message,
 .error {
-  /* Email validation styles */
   color: var(--color-error-states);
   font-family: "Red Hat Display", sans-serif;
   font-size: var(--font-mobile-size-xs);
 }
 
+/* Hero section styles */
 .hero {
   width: auto;
   position: relative;
-  top: -132px;
+  top: -8.25rem;
 }
 
 .hero__form-content {
   position: relative;
-  top: 155px;
+  top: 9.6875rem;
 }
 
 .hero__form-title {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   position: relative;
-  top: 80px;
+  top: 5rem;
   color: var(--color-text-secondary);
   font-size: var(--font-mobile-size-lg);
   z-index: 2;
-  width: 170px;
+  width: 10.625rem;
 }
 
 #hero__form-description {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   position: relative;
-  top: 90px;
+  top: 5.625rem;
   color: var(--color-text-secondary);
   z-index: 2;
-  width: 210px;
-  height: 140px;
+  width: 13.125rem;
+  height: 8.75rem;
   font-size: var(--font-mobile-size-sm);
 }
 
@@ -42,53 +43,55 @@ h2 {
   color: var(--color-primary);
   text-align: center;
   position: relative;
-  width: 240px;
+  width: 15rem;
 }
 
 .hero__form-image {
   width: 100%;
   height: auto;
   position: relative;
-  top: -30px;
+  top: -1.875rem;
 }
+
+/* Contact form styles */
 
 .contact__form-container {
   position: relative;
-  top: 154px;
+  top: 9.625rem;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #fff;
   text-align: center;
-  max-width: 250px;
+  max-width: 15.625rem;
   width: auto;
 }
 
 .contact-form {
-  max-width: 300px;
+  max-width: 18.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   position: relative;
   width: 100%;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
   background-color: #fff;
   text-align: center;
-  max-width: 200px;
-  border-radius: 10px;
+  max-width: 12.5rem;
+  border-radius: 0.625rem;
 }
 
 input {
-  border-radius: 100px;
-  width: 200px;
-  height: 30px;
+  border-radius: 6.25rem;
+  width: 12.5rem;
+  height: 1.875rem;
   border: none;
   outline: none;
   background: var(--color-text-secondary);
@@ -104,22 +107,22 @@ textarea::placeholder {
   font-size: var(--font-mobile-size-xs);
   font-family: "Red Hat Display", sans-serif;
   position: relative;
-  left: 5px;
+  left: 0.3125rem;
 }
 
 .input-container,
 textarea,
 #send-button {
-  margin-top: 1px;
-  padding: 3px;
+  margin-top: 0.0625rem;
+  padding: 0.1875rem;
 }
 
 textarea {
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 200px;
-  height: 100px;
+  border-radius: 0.625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  width: 12.5rem;
+  height: 6.25rem;
   resize: none;
   outline: none;
   border: none;
@@ -128,9 +131,9 @@ textarea {
 }
 
 #send-button {
-  border-radius: 100px;
-  width: 170px;
-  height: 30px;
+  border-radius: 6.25rem;
+  width: 10.625rem;
+  height: 1.875rem;
   background: none;
   border: none;
   font-weight: 400;
@@ -148,78 +151,83 @@ a {
 }
 
 #clients_contact {
-  margin-top: 450px;
+  margin-top: 28.125rem;
 }
+
+/* Screen tablets styles */
 
 @media (min-width: 768px) {
   #hero-section {
-    top: 40px;
+    top: 2.5rem;
   }
 
   .hero__form-image {
     position: relative;
-    top: -350px;
+    top: -21.875rem;
   }
 
   .hero__form-title {
-    top: -40px;
-    margin-left: 50px;
+    top: -2.5rem;
+    margin-left: 3.125rem;
     font-size: var(--font-tablet-size-xl);
-    width: 550px;
+    width: 34.375rem;
   }
 
   #hero__form-description {
     position: relative;
-    top: -10px;
-    width: 440px;
-    margin-left: 50px;
+    top: -0.625rem;
+    width: 27.5rem;
+    margin-left: 3.125rem;
     font-size: var(--font-mobile-size-lg);
   }
 
   .contact__form-container {
-    top: 995px;
+    top: 62.1875rem;
     scale: 1.5;
   }
 
   #clients_contact {
-    margin-top: 550px;
+    margin-top: 34.375rem;
   }
 }
 
+/* Styles for Large Tablets and Small Laptops */
+
 @media (min-width: 1024px) {
   #hero-section {
-    top: -50px;
+    top: -3.125rem;
   }
 
   .hero__form-image {
     position: relative;
-    top: -460px;
+    top: -28.75rem;
   }
 
   .hero__form-title {
-    top: -10px;
+    top: -0.625rem;
     font-size: var(--font-desktop-size-xl);
-    width: 630px;
+    width: 39.375rem;
   }
 
   .contact__form-container {
-    top: 1115px;
+    top: 69.6875rem;
   }
 
   #hero__form-description {
     position: relative;
-    top: 40px;
-    width: 780px;
+    top: 1.1rem;
+    width: 48.75rem;
     font-size: var(--font-desktop-size-lg);
   }
 
   #clients_contact {
-    margin-top: 0px;
+    margin-top: 0rem;
   }
 }
 
-@media (min-width: 1280px) {
+/* HD Screen Styles */
 
+@media (min-width: 1280px) {
   .hero__form-title {
     font-size: var(--font-desktop-hd-size-xxl);
   }
@@ -229,73 +237,79 @@ a {
   }
 
   #clients_contact {
-    margin-top: 700px;
+    margin-top: 43.75rem;
   }
 }
 
+/* FHD Screen Styles */
+
 @media (min-width: 1920px) {
   .hero__form-image {
-    top: -560px;
+    top: -35rem;
   }
 
   .hero__form-title {
-    top: 160px;
+    top: 10rem;
     font-size: var(--font-desktop-size-xl);
-    width: 810px;
-    margin-left: 160px;
+    width: 50.625rem;
+    margin-left: 10rem;
   }
 
   #hero__form-description {
     position: relative;
-    top: 190px;
-    width: 810px;
+    top: 11.875rem;
+    width: 50.625rem;
     font-size: var(--font-desktop-size-lg);
-    margin-left: 160px;
+    margin-left: 10rem;
   }
 
   .contact__form-container {
-    top: 1515px;
+    top: 94.6875rem;
     scale: 2;
   }
 
   #clients_contact {
-    margin-top: 1200px;
+    margin-top: 75rem;
   }
 }
+
+/* QHD Screen Styles */
 
 @media (min-width: 2560px) {
   .hero__form-content {
-    top: 460px;
+    top: 28.75rem;
   }
 
   .hero__form-image {
-    top: -660px;
+    top: -41.25rem;
   }
 
   .hero__form-title {
-    margin-left: 460px;
+    margin-left: 28.75rem;
   }
 
   #hero__form-description {
-    width: 770px;
-    margin-left: 460px;
+    width: 48.125rem;
+    margin-left: 28.75rem;
   }
 
   .contact__form-container {
-    top: 1815px;
+    top: 113.4375rem;
   }
 
   #clients_contact {
-    margin-top: 1000px;
+    margin-top: 62.5rem;
   }
 }
 
+/* 4K Screen Styles */
+
 @media (min-width: 3840px) {
   .hero__form-content {
-    top: 890px;
+    top: 55.625rem;
   }
 
   .contact__form-container {
-    top: 2915px;
+    top: 182.1875rem;
   }
 }

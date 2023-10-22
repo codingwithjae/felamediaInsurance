@@ -1,39 +1,54 @@
+/* Styles for <span> elements */
 span {
   color: var(--color-text-primary);
   font-size: var(--font-mobile-size-lg);
   font-family: "Red Hat Display", sans-serif;
 }
 
+/* Styles for main container */
+
+main {
+  margin-bottom: 6.25rem;
+}
+
+/* Styles for <h1> elements */
 h1 {
-  font-size: var();
+  font-size: var(
+    --font-mobile-size-lg
+  ); /* Make sure to define the desired size */
   color: var(--color-primary);
   font-family: "Red Hat Display", sans-serif;
 }
 
+/* Styles for <h2> elements */
 h2 {
   text-align: center;
   color: var(--color-primary);
   font-family: "Red Hat Display", sans-serif;
 }
 
+/* Styles for the element with id #principal */
 #principal {
-  margin-top: 240px;
-  margin-bottom: 120px;
+  margin-top: 15rem;
+  margin-bottom: 7.5rem;
   font-size: var(--font-mobile-size-lg);
 }
 
+/* Styles for elements with the class .my-2 */
 .my-2 {
   color: var(--color-text-primary);
 }
 
+/* Styles for elements with the class .px-3 */
 .px-3 {
   color: var(--color-text-primary);
+  font-family: "Red Hat Display", sans-serif;
 }
 
+/* Styles for larger screens (48rem or more) */
 @media (min-width: 768px) {
   #principal {
     position: relative;
-    top: 20px;
+    top: 1.25rem;
   }
 }
-

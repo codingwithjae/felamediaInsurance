@@ -1,0 +1,35 @@
+--font-mobile-size-xs: 0.625rem;
+--font-mobile-size-sm: 0.75rem;
+--font-mobile-size-md: 0.875rem;
+--font-mobile-size-lg: 1.5625rem;
+--font-mobile-size-xl: 3.75rem;
+--font-tablet-size-sm: 0.9375rem;
+--font-tablet-size-md: 2.1875rem;
+--font-tablet-size-lg: 2.5rem;
+--font-tablet-size-xl: 3.75rem;
+--font-desktop-size-xs: 1.125rem;
+--font-desktop-size-sm: 1.5rem;
+--font-desktop-size-md: 1.9125rem;
+--font-desktop-size-lg: 2.86625rem;
+--font-desktop-size-xl: 5.0625rem;
+--font-desktop-hd-size-xs: 1.475rem;
+--font-desktop-hd-size-sm: 1.75rem;
+--font-desktop-hd-size-md: 2.23875rem;
+--font-desktop-hd-size-lg: 2.625rem;
+--font-desktop-hd-size-xl: 4.625rem;
+--font-desktop-hd-size-xxl: 5.6875rem;
+--color-primary: #1f3c88;
+--color-primary-hover: #0053a0;
+--color-error-states: red;
+--background-gradient: rgb(96, 55, 222);
+--background-gradient-linear: linear-gradient(
+  /* Gradient background colors */ 90deg,
+  rgba(96, 55, 222, 1) 0%,
+  rgba(60, 42, 187, 1) 100%
+); /* Agrega la definición completa aquí */
+--color-bg-primary: #ffff;
+--color-bg-secondary: #58a0eb;
+--color-bg-tertiary: #f0f0f0;
+--color-text-primary: #868686;
+--color-text-secondary: #ffff;
+--color-text-tertiary: #ffff;
