@@ -38,9 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!validateEmail()) {
       // If the email is not valid, prevent form submission
       event.preventDefault();
-    } else {
-      // Valid email, redirect to the thank you page
-      redirectToThankYou();
     }
   });
 
