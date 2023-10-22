@@ -49,20 +49,21 @@
           />
           <div class="input-container">
             <input
-              id="fullname"
-              name="Nombre y Apellido"
-              type="text"
-              required
-              placeholder="Nombre y Apellido"
-            />
-          </div>
+            id="fullname"
+            name="Nombre y Apellido"
+            type="text"
+            required
+            placeholder="Nombre y Apellido"
+            autocomplete="name"
+          />
           <div class="input-container">
             <input
-              id="email"
-              name="email"
-              type="text"
-              placeholder="Correo electrónico"
-            />
+            id="email"
+            name="email"
+            type="text"
+            placeholder="Correo electrónico"
+            autocomplete="email"
+          />
             <input
               type="hidden"
               name="_autoresponse"
@@ -72,28 +73,32 @@
           </div>
           <div class="input-container">
             <input
-              id="city"
-              name="city"
-              type="text"
-              placeholder="Ciudad donde vives"
-            />
+            id="city"
+            name="city"
+            type="text"
+            placeholder="Ciudad donde vives"
+            autocomplete="address-level2"
+          />
+          
           </div>
           <div class="input-container">
             <input
-              id="whatsapp"
-              name="whatsapp"
-              type="text"
-              placeholder="WhatsApp"
-            />
+            id="whatsapp"
+            name="whatsapp"
+            type="text"
+            placeholder="WhatsApp"
+            autocomplete="tel"
+          />
           </div>
           <div class="message-container">
             <textarea
-              id="message"
-              name="message"
-              type="text"
-              placeholder="Mensaje"
-              maxlength="500"
-            ></textarea>
+            id="message"
+            name="message"
+            type="text"
+            placeholder="Mensaje"
+            maxlength="500"
+            autocomplete="off"
+          ></textarea>
           </div>
           <button id="send-button" type="submit">Enviar</button>
         </form>

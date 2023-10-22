@@ -193,17 +193,17 @@ a {
 
   .hero__form-image {
     position: relative;
-    top: -400px;
+    top: -460px;
   }
 
   .hero__form-title {
-    top: 20px;
+    top: -10px;
     font-size: var(--font-desktop-size-xl);
     width: 630px;
   }
 
   .contact__form-container {
-    top: 1015px;
+    top: 1115px;
   }
 
   #hero__form-description {
@@ -219,9 +219,6 @@ a {
 }
 
 @media (min-width: 1280px) {
-  .hero__form-content {
-    top: 325px;
-  }
 
   .hero__form-title {
     font-size: var(--font-desktop-hd-size-xxl);
