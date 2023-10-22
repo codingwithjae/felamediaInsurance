@@ -8,13 +8,26 @@
     <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Signika:wght@300;400;500&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <header class="header">
+      <a href="index.html">
+        <img class="header-logo_image" src="img/logo-with-text copy.png" alt="Logo de Felamedia Seguros" />
+      </a>
+      <nav>
+        <ul class="header__menu">
+          <li><a class="header__menu_link" href="/faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <a href="form.html">
+        <button id="contact-me-button" class="header__cta-button header_hd-cta-button">
+          Quiero protegerme
+        </button>
+      </a>
+    </header>
+    
     <main class="main">
       <section id="hero-section" class="hero">
         <div class="hero__image-content">
@@ -25,7 +38,7 @@
             class="hero__image"
           />
         </div>
-    
+
         <div class="hero__content">
           <h1 class="hero__title">
             Protege tu tranquilidad y futuro financiero, hoy.
@@ -36,7 +49,7 @@
           </p>
         </div>
       </section>
-    
+
       <section id="logo-section" class="logo">
         <div class="logo-section-content">
           <p class="logo__copy">Elige</p>
@@ -50,7 +63,7 @@
           </p>
         </div>
       </section>
-    
+
       <section id="services-section" class="services">
         <div class="services-list-content">
           <img
@@ -59,18 +72,20 @@
             alt="Lista de servicios"
           />
         </div>
-    
+
         <div class="services__cta-container">
-          <button
-            id="contact-me-button"
-            href="#contact-section"
-            class="services__cta cta-button"
-          >
-          <a href="form.html">Quiero protegerme</a>
-          </button>
+          <a href="form.html">
+            <button
+              id="contact-me-button"
+              href="#contact-section"
+              class="services__cta cta-button"
+            >
+              Quiero protegerme
+            </button>
+          </a>
         </div>
       </section>
-    
+
       <section id="advisors-section" class="advisors">
         <div class="advisors__content">
           <h2 class="advisors__title">Tus Asesores de Protección</h2>
@@ -88,7 +103,7 @@
             futuros, buscando brindarte la protección requerida a tu medida.
           </p>
         </div>
-    
+
         <div class="advisors__image-content">
           <img
             src="img/shape-squares-images.png"
@@ -119,13 +134,15 @@
         </div>
 
         <div class="understanding__cta-container">
-          <button
-            id="contact-me-button"
-            href="#contact-section"
-            class="understanding__cta cta-button"
-          >
-          <a href="form.html">Quiero protegerme</a>
-          </button>
+          <a href="form.html">
+            <button
+              id="contact-me-button"
+              href="#contact-section"
+              class="understanding__cta cta-button"
+            >
+              Quiero protegerme
+            </button>
+          </a>
         </div>
       </section>
 
@@ -217,7 +234,7 @@
             <h3 class="insurance-type__title">Seguro de Vida</h3>
           </div>
       
-          <div class="insurance-type__description">
+          <div class "insurance-type__description">
             <p>
               Proporciona apoyo financiero a tus seres queridos en caso de
               fallecimiento, garantizando su bienestar económico y cubriendo
@@ -246,17 +263,18 @@
             </p>
           </div>
         </div>
-      
-        <button
-          id="contact-me-button"
-          href="#contact-section"
-          class="insurance__cta cta-button"
-        >
-        <a href="form.html">Quiero protegerme</a>
-        </button>
-      
-        <div  class="company-info">
-          <p id="insurance-company_info"">Compañía de seguros</p>
+        
+        <a href="form.html">
+          <button
+            id="contact-me-button"
+            class="insurance__cta cta-button"
+          >
+            Quiero protegerme
+          </button>
+        </a>
+        
+        <div class="company-info">
+          <p id="insurance-company_info">Compañía de seguros</p>
         </div>
       </section>
 
@@ -269,8 +287,6 @@
           />
         </div>
       </section>
-
-      
       
     </main>
   </body>
