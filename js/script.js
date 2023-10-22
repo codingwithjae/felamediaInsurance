@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     } else {
       // Invalid email, show an error message in the <span> element
-      errorMessage.textContent = "Please enter a valid email";
+      errorMessage.textContent = "Por favor, coloca un mail válido";
       emailField.classList.add("error");
 
       return false;

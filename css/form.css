@@ -1,13 +1,9 @@
-.error-message {
+.error-message,
+.error {
   /* Email validation styles */
   color: var(--color-error-states);
   font-family: "Red Hat Display", sans-serif;
   font-size: var(--font-mobile-size-xs);
-}
-
-.error {
-  /* Email validation styles */
-  border: 1px solid var(--color-error-states);
 }
 
 .hero {
@@ -58,7 +54,7 @@ h2 {
 
 .contact__form-container {
   position: relative;
-  top: 134px;
+  top: 154px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -86,10 +82,6 @@ h2 {
   background-color: #fff;
   text-align: center;
   max-width: 200px;
-  padding: 20px;
-  background-color: #fff;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
@@ -146,7 +138,6 @@ textarea {
   padding: 0;
   color: var(--color-text-secondary);
   background: var(--background-gradient);
-  background: var(--background-gradient-linear);
   cursor: pointer;
   outline: inherit;
 }
@@ -157,12 +148,12 @@ a {
 }
 
 #clients_contact {
-  margin-top: 350px;
+  margin-top: 450px;
 }
 
 @media (min-width: 768px) {
-  .hero {
-    top: 5px;
+  #hero-section {
+    top: 40px;
   }
 
   .hero__form-image {
@@ -174,30 +165,30 @@ a {
     top: -40px;
     margin-left: 50px;
     font-size: var(--font-tablet-size-xl);
-    width: 400px;
+    width: 550px;
   }
 
   #hero__form-description {
     position: relative;
     top: -10px;
-    width: 410px;
+    width: 440px;
     margin-left: 50px;
     font-size: var(--font-mobile-size-lg);
   }
 
   .contact__form-container {
-    top: 895px;
+    top: 995px;
     scale: 1.5;
   }
 
   #clients_contact {
-    margin-top: 350px;
+    margin-top: 550px;
   }
 }
 
 @media (min-width: 1024px) {
-  .hero {
-    top: -45px;
+  #hero-section {
+    top: -50px;
   }
 
   .hero__form-image {
@@ -209,6 +200,10 @@ a {
     top: 20px;
     font-size: var(--font-desktop-size-xl);
     width: 630px;
+  }
+
+  .contact__form-container {
+    top: 1015px;
   }
 
   #hero__form-description {
@@ -224,10 +219,6 @@ a {
 }
 
 @media (min-width: 1280px) {
-  .hero {
-    top: -95px;
-  }
-
   .hero__form-content {
     top: 325px;
   }
@@ -238,12 +229,6 @@ a {
 
   #hero__form-description {
     font-size: var(--font-desktop-hd-size-md);
-  }
-
-  .contact__form-container {
-    margin-top: 30px;
-    top: 1255px;
-    scale: 1.7;
   }
 
   #clients_contact {
@@ -275,6 +260,10 @@ a {
     top: 1515px;
     scale: 2;
   }
+
+  #clients_contact {
+    margin-top: 1200px;
+  }
 }
 
 @media (min-width: 2560px) {
@@ -296,7 +285,11 @@ a {
   }
 
   .contact__form-container {
-    top: 1315px;
+    top: 1815px;
+  }
+
+  #clients_contact {
+    margin-top: 1000px;
   }
 }
 
@@ -306,6 +299,6 @@ a {
   }
 
   .contact__form-container {
-    top: 2115px;
+    top: 2915px;
   }
 }
