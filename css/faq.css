@@ -1,32 +1,39 @@
-
 span {
-    color: var(--color-text-primary);
-    font-size: var(--font-mobile-size-lg);
-
+  color: var(--color-text-primary);
+  font-size: var(--font-mobile-size-lg);
+  font-family: "Red Hat Display", sans-serif;
 }
 
 h1 {
-    font-size: var();
-    color: var(--color-primary);
+  font-size: var();
+  color: var(--color-primary);
+  font-family: "Red Hat Display", sans-serif;
 }
 
 h2 {
-    text-align: center;
-    color: var(--color-primary);
+  text-align: center;
+  color: var(--color-primary);
+  font-family: "Red Hat Display", sans-serif;
 }
 
 #principal {
-  margin-top: 200px;
-  margin-bottom: 20px;
+  margin-top: 240px;
+  margin-bottom: 120px;
   font-size: var(--font-mobile-size-lg);
 }
 
 .my-2 {
-    color: var(--color-text-primary);
+  color: var(--color-text-primary);
 }
 
 .px-3 {
-    color: var(--color-text-primary);
+  color: var(--color-text-primary);
 }
 
+@media (min-width: 768px) {
+  #principal {
+    position: relative;
+    top: 20px;
+  }
+}
 

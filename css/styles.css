@@ -81,10 +81,6 @@ li {
   margin-left: 15px;
 }
 
-footer {
-  display: none;
-}
-
 h1,
 h2,
 h3 {
@@ -141,7 +137,6 @@ header {
 
 .header__menu_link:hover {
   color: var(--color-text-primary);
-
 }
 
 .header-logo_image {
@@ -637,6 +632,18 @@ header {
     width: 60%;
     height: 60%;
     margin-bottom: 60px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+  .contact {
+    width: auto;
+  }
+
+  .contact_image {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -1275,5 +1282,3 @@ header {
     top: 2350px;
   }
 }
-
-
