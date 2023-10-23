@@ -25,16 +25,16 @@
   color: var(--color-text-secondary);
   font-size: var(--font-mobile-size-lg);
   z-index: 2;
-  width: 10.625rem;
+  width: 14.625rem;
 }
 
 #hero__form-description {
   margin-left: 0.625rem;
   position: relative;
-  top: 5.625rem;
+  top: 4.925rem;
   color: var(--color-text-secondary);
   z-index: 2;
-  width: 13.125rem;
+  width: 16.125rem;
   height: 8.75rem;
   font-size: var(--font-mobile-size-sm);
 }
