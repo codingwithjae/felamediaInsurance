@@ -11,6 +11,10 @@ main {
   margin-bottom: 6.25rem;
 }
 
+.header__menu_link {
+  top: 0.5rem;
+}
+
 /* Styles for <h1> elements */
 h1 {
   font-size: var(

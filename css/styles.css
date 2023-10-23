@@ -45,10 +45,8 @@ nav {
   --font-mobile-size-xs: 0.625rem;
   --font-mobile-size-sm: 0.75rem;
   --font-mobile-size-md: 0.875rem;
-  --font-mobile-size-lg: 1.5625rem;
+  --font-mobile-size-lg: 1.7625rem;
   --font-mobile-size-xl: 3.75rem;
-
-  /* Font Sizes for Tablet Devices */
   --font-tablet-size-sm: 0.9375rem;
   --font-tablet-size-md: 2.1875rem;
   --font-tablet-size-lg: 2.5rem;
@@ -60,8 +58,6 @@ nav {
   --font-desktop-size-md: 1.9125rem;
   --font-desktop-size-lg: 2.86625rem;
   --font-desktop-size-xl: 5.0625rem;
-
-  /* Font Sizes for Desktop HD Displays */
   --font-desktop-hd-size-xs: 1.475rem;
   --font-desktop-hd-size-sm: 1.75rem;
   --font-desktop-hd-size-md: 2.23875rem;
@@ -95,7 +91,7 @@ nav {
 
 /* Styling for 'main' element */
 
-main {
+.main {
   overflow-x: hidden;
 }
 
@@ -142,7 +138,6 @@ h3 {
 
 p {
   font-family: "Red Hat Display", sans-serif;
-  font-size: var(--font-size-sm);
 }
 
 /* Font family for 'contact-me-button' and 'header' */
@@ -161,8 +156,8 @@ header {
 /* Styling for 'contact-me-button' */
 #contact-me-button {
   border-radius: 6.25rem;
-  width: 9.375rem;
-  height: 2.5rem;
+  width: 7.1rem;
+  height: 2.2rem;
   background: 0 0;
   border: none;
   font-weight: 400;
@@ -198,6 +193,11 @@ header {
   height: 8.125rem;
 }
 
+.header__menu_link {
+  position: relative;
+  left: -1.1rem;
+}
+
 /* Font size and positioning for the CTA button in the header */
 .header__cta-button {
   font-size: var(--font-mobile-size-xs);
@@ -208,13 +208,12 @@ header {
 /* Styling for 'hero' and its dimensions */
 .hero {
   height: 28.125rem;
-
 }
 
 /* Positioning for 'hero__content' and 'hero__title' */
 .hero__content {
-  left: 0.5rem;
-  top: 2.5rem;
+  left: 0.28rem;
+  top: 1.5rem;
 }
 
 /* Positioning and font size for 'hero__title' and 'hero__description' */
@@ -242,15 +241,16 @@ header {
 .shape__image {
   position: relative;
   width: 100%;
-  top: -1.875rem;
+  top: 1.55rem;
   height: 100%;
-  right: 10vw;
+  right: 6vw;
+  scale: 1.5;
 }
 
 /* Styling and dimensions for 'hero__image' */
 .hero__image {
   position: absolute;
-  top: 5.3125rem;
+  top: 10.3125rem;
   left: 0.95rem;
   height: 100%;
   width: 100%;
@@ -259,7 +259,9 @@ header {
 
 /* Styling for the 'logo' and its dimensions */
 .logo {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
+  position: relative;
+  top: 2rem;
   width: auto;
   height: 6.25rem;
 }
@@ -278,6 +280,8 @@ header {
 .logo__copy {
   font-size: var(--font-mobile-size-md);
   margin-bottom: -6.25rem;
+  position: relative;
+  top: -2rem;
 }
 
 /* Styling for 'logo__with-text' */
@@ -288,13 +292,16 @@ header {
 /* Positioning, color, and font size for 'logo-slogan__copy' */
 #logo-slogan__copy {
   position: relative;
-  top: -5rem;
+  top: -4rem;
   color: var(--color-primary);
+  text-align: center;
+  width: 15rem;
 }
 
 /* Styling for 'services' section */
 .services {
   position: relative;
+  top: 5rem;
   width: auto;
   height: auto;
   display: flex;
@@ -326,6 +333,7 @@ header {
 .services__cta {
   position: relative;
   top: 0.625rem;
+  font-size: var(--font-mobile-size-xs);
 }
 
 /* Styling for 'advisors' section */
@@ -334,6 +342,8 @@ header {
   flex-direction: column;
   justify-content: left;
   margin-left: 1.25rem;
+  position: relative;
+  top: 2rem;
   margin-top: 5rem;
 }
 
@@ -383,7 +393,9 @@ header {
   position: relative;
   top: -17.5rem;
   color: var(--color-text-secondary);
-  height: 17.5rem;
+  height: 19.5rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
 /* Styling for 'understanding__background' */
@@ -425,9 +437,13 @@ header {
 
 /* Styling for 'understanding__cta-container' */
 .understanding__cta-container {
-  margin-top: 1.05rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
+}
+
+.understanding__cta {
+  font-size: var(--font-mobile-size-xs);
 }
 
 /* Styling for 'protection' section */
@@ -488,7 +504,7 @@ header {
 /* Styling for 'insurance' section */
 .insurance {
   width: 100%;
-  margin-top: 9.375rem;
+  margin-top: 1.375rem;
   align-items: center;
   position: relative;
   top: -18.75rem;
@@ -531,7 +547,13 @@ header {
   font-size: 1rem;
   margin-left: 1.25rem;
   width: auto;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-mobile-size-md);
+}
+
+/* Styling for '.insurance__cta' */
+
+.insurance__cta {
+  font-size: var(--font-mobile-size-xs);
 }
 
 /* Styling for 'insurance-company_info' */
@@ -558,6 +580,46 @@ header {
 .clients_logos {
   width: 80%;
   height: 80%;
+}
+
+/* Foldable smartphones styles */
+
+@media (min-width: 512px) {
+  .hero__image {
+    top: 18.3125rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .hero {
+    height: 28.125rem;
+  }
+
+  .hero__content {
+    left: 2.45rem;
+    top: 7.5rem;
+  }
+
+  .hero__image {
+    top: 19.3125rem;
+  }
+
+  .shape__image {
+    top: 1rem;
+  }
+
+  .logo {
+    margin-top: 30rem;
+    margin-bottom: 15rem;
+  }
+
+  .insurance {
+    margin-top: 21.375rem;
+  }
+
+  .circle__protection-graphic {
+    left: 4.125rem;
+  }
 }
 
 /* Tablets Screen Styles */
@@ -587,9 +649,9 @@ header {
   .hero__title {
     margin-left: 1.25rem;
     top: 5rem;
-    font-size: var(--font-tablet-size-lg);
+    font-size: var(--font-tablet-size-xl);
     z-index: 2;
-    width: 34.375rem;
+    width: 42.375rem;
   }
   #hero__description {
     margin-left: 1.25rem;
@@ -607,13 +669,14 @@ header {
   }
   .logo {
     top: 48.75rem;
+    margin-top: 10rem;
   }
   .advisors,
   .services {
     top: 49.375rem;
   }
   .logo__copy {
-    font-size: var(--font-mobile-size-sm);
+    font-size: var(--font-mobile-size-md);
     margin-bottom: -9.375rem;
   }
   .logo__with-text {
@@ -622,6 +685,7 @@ header {
   #logo-slogan__copy {
     top: -7.5rem;
     font-size: var(--font-desktop-size-sm);
+    width: 30rem;
   }
   .services-list-content {
     display: flex;
@@ -689,6 +753,8 @@ header {
   }
   .insurance {
     top: 31.875rem;
+    margin-top: 5rem;
+    font-size: var(--font-tablet-size-sm);
   }
   .clients {
     top: 37.5rem;
@@ -713,6 +779,7 @@ header {
 /* Styles for big screen tablets and small laptops */
 
 @media (min-width: 1024px) {
+
   .header__cta-button,
   nav {
     font-size: var(--font-desktop-size-sm);
@@ -836,6 +903,11 @@ header {
   .protection__circle-description {
     margin-top: 2.625rem;
   }
+
+  .circle__protection-graphic {
+    left: 15.125rem;
+  }
+
   .circle {
     top: 44.375rem;
     right: 8.125rem;
@@ -843,6 +915,7 @@ header {
   }
   .insurance {
     top: 75.625rem;
+    margin-top: -6rem;
   }
   .insurance-type__title {
     font-size: var(--font-size-lg);
@@ -853,7 +926,7 @@ header {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     width: 48.75rem;
-    font-size: var(--font-desktop-sm);
+    font-size: var(--font-desktop-lg);
   }
   #insurance-company_info {
     color: var(--color-primary);
@@ -873,6 +946,14 @@ header {
 /* Styling for HD screen devices */
 
 @media (min-width: 1280px) {
+  .main::-webkit-scrollbar {
+    display: none; /* Webkit (Safari, Chrome) */
+  }
+
+  #main_container {
+    overflow: auto;
+  }
+
   nav {
     left: 15.625rem;
   }
@@ -906,7 +987,7 @@ header {
     top: 14.6875rem;
     width: 85%;
     height: 95%;
-    left: 21.25rem;
+    left: 26.25rem;
   }
   .logo {
     top: 46.875rem;
@@ -952,6 +1033,13 @@ header {
   .protection {
     top: 12.5rem;
   }
+
+  .protection,
+  .insurance-type__title,
+  .insurance-type__description {
+    font-size: var(--font-desktop-size-sm);
+  }
+
   .insurance {
     top: 43.75rem;
   }
@@ -1084,6 +1172,7 @@ header {
   }
   .insurance {
     top: 35rem;
+    margin-top: 10rem;
   }
   .insurance-type__title {
     font-size: var(--font-desktop-hd-size-lg);
