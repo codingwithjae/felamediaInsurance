@@ -780,6 +780,12 @@ header {
 
 @media (min-width: 1024px) {
 
+  #main_container {
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
   .header__cta-button,
   nav {
     font-size: var(--font-desktop-size-sm);
@@ -946,13 +952,6 @@ header {
 /* Styling for HD screen devices */
 
 @media (min-width: 1280px) {
-  .main::-webkit-scrollbar {
-    display: none; /* Webkit (Safari, Chrome) */
-  }
-
-  #main_container {
-    overflow: auto;
-  }
 
   nav {
     left: 15.625rem;
